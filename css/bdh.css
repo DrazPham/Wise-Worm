@@ -1,0 +1,252 @@
+/* CAROSEUL */
+#heading {
+    font-weight: bold;
+    font-size: 200%;
+    color: rgb(0, 162, 255);
+}
+
+#caroseul {
+    background-color: lightblue;
+    position: relative;
+    height: 60vh;
+}
+
+#caroseul p {
+    font-size: x-large;
+}
+
+#highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 70vw;
+    position: absolute;
+    left: 50%;
+    gap: 30px;
+    bottom: 1;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#highlight h3 {
+    background: linear-gradient(to right, #4f469c,#2c61d1);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+/* MAIN */
+#main {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#recruitment {
+    grid-column: 3/11;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#recruitment img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* margin: 20px; */
+}
+
+#recruitDetails {
+    padding: 30px;
+}
+
+#recruitDetails h1 {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #4f469c,#2c61d1);
+    background-clip: text;
+    color: transparent;
+}
+
+/* PRIVILEGE */
+#privilege{
+    margin-top: 50px;
+    grid-column: 3/11;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#privilege #infor{
+    padding: 20px;
+}
+#privilege h4{
+    font-weight: bold;
+    color: purple;
+}
+#privilege p{
+    text-align: left;
+}
+#privilege #intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#privilege #introduction-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#privilege #introduction-container .intro-section {
+    display: flex;
+    flex-direction: row;
+}
+#privilege h1 {
+    background: linear-gradient(to right, #4f469c,#2c61d1);
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    text-align: center;
+}
+#privilege h2 {
+    text-align: center;
+}
+#privilege h4 {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+    color: rgb(84, 60, 136);
+}
+#privilege .intro-container {
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    gap: 20px;
+}
+#privilege .intro-container img {
+    border-radius: 10px;
+}
+#privilege .intro-container .image_disappear {
+    display: none;
+}
+#privilege .intro-container .image_appear {
+    display: block;
+}
+#privilege .intro-section {
+    display: flex;
+    flex-direction: column;
+}
+#privilege .bi{
+    padding: 30px;
+    font-size: 32px
+}
+
+
+/* ACCORDION */
+#accordionExample {
+    margin-top: 50px;
+    grid-column: 3/11;
+}
+#accordionExample ul li {
+    list-style: circle !important;
+}
+
+#accordionExample #JD_heading {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* EXPERIENCE */
+#feeling{
+    grid-column: 3/11;
+}
+#feeling h1, h5{
+    text-align: center;
+    background: linear-gradient(to right, #4f469c,#2c61d1);
+    background-clip: text;
+    color: transparent;
+}
+#feeling h1{
+    font-weight: bold;
+}
+#activities_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#activities_section .activities_container {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#activities_section .activities_label {
+    position: absolute;
+    background-color: rgb(84, 60, 136);
+    left: -5px;
+    z-index: 10;
+    top: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    overflow-x: scroll !important;
+}
+
+#activities_section .activities_main {
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    overflow-x: scroll !important;
+}
+
+#activities_section .activities_description {
+    padding: 20px;
+}
+
+
+@media (max-width:1000px) {
+    #recruitment{
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+    }
+    #caroseul p{
+        font-size: 16px;
+    }
+    #heading{
+        margin: 30px;
+    }
+    #highlight{
+        grid-template-columns: 1fr 1fr;
+        height: 30vh;
+    }
+    #highlight div{
+        overflow-y: hidden;
+        font-size: 12px;
+    }
+    #privilege{
+        grid-template-columns: 1fr;
+    }
+    #feeling{
+        margin-top: 50px;
+    }
+}
+@media (max-width:600px) {
+    #activities_section{
+        grid-template-columns: 1fr;
+    }
+}

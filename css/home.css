@@ -1,0 +1,108 @@
+/* CAROSEUL */
+.carousel-inner{
+    margin-top: 50px;
+    height: 100vh;
+}
+
+.carousel-inner div{
+    height: 100%;
+}
+.carousel-inner div img{
+    height: 100%;
+    object-fit: cover;
+}
+
+/* MAIN */
+#main {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+#main #welcome{
+    background: linear-gradient(to right, #4f469c,#2c61d1);
+    background-clip: text;
+    color: transparent;
+}
+
+#main #brief_introduction {
+    grid-column: 3/11;
+    text-align: center;
+}
+
+#main #brief_introduction h1 {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+#main #brief_introduction h2 {
+    font-size: 200%;
+}
+
+#main #highlight_information {
+    grid-column: 3/11;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+#main #highlight_information div {
+    display: flex;
+    flex-direction: column;
+}
+
+#main #highlight_information div h1 {
+    font-size: 300%;
+    background: linear-gradient(to right, #4f469c,#2c61d1);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+#main #intro{
+    background: linear-gradient(to right, #4f469c,#2c61d1);
+    background-clip: text;
+    color: transparent;
+}
+
+#main #long_introduction {
+    grid-column: 3/11;
+}
+
+#main #long_introduction h1 {
+    font-size: 300%;
+    font-weight: bold;
+}
+#main #userOp{
+    grid-column: 3/11;
+    margin: 0;
+}
+
+#main #userOp ul{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 5px;
+}
+#main #userOp ul h1{
+    font-weight: bold;
+}
+#main #userOp ul p{
+    padding:  10px 20px;
+}
+#userOp h1{
+    background: linear-gradient(to right, #4f469c,#2c61d1);
+    background-clip: text;
+    color: transparent;
+}
+#main #userOp li:first-child{
+    border-right: solid 1px black;
+}
+@media (max-width:1000px) {
+    #main #userOp ul{
+        grid-template-columns: 1fr;
+    }
+    #main #userOp li:first-child{
+        border-bottom: solid 1px black;
+        border-right: none;
+    }
+}
